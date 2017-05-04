@@ -1,0 +1,2 @@
+baseurl: /zed
+exclude: ["README.md"]
