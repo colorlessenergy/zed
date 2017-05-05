@@ -2,4 +2,70 @@
 layout: default
 ---
 
-<p>hi</p>
+<section>
+  {% include nav.html%}
+  <div>
+    <p>Zed - The master of Shadows.</p>
+    <p>Zed returns plays to</p>
+    <h1>Glory</h1>
+    <h1>& Honor</h1>
+    <p>why and how</p>
+  </div>
+</section>
+<section>
+  <div>
+    <p>Zed has alot of outplay potential.</p>
+    <p>Zed is the first ninja in 2 centuries to unlock the ancient, forbidden ways. He defied his clan and master, threw off the balance and discipline that had locked him all of his life. Zed now offers power to those who embrace knowledge of the shadows, and slays those who stay to ignorance.</p>
+  </div>
+  <div>
+    <p>"Balance is a lie - we are the true ninjas." -Zed</p>
+    <p>Zed challanged his master's teachings by using forbidden techniques and followed his dark side.</p>
+  </div>
+</section>
+<section>
+  <img src="image/zedW.png" alt="zed icon">
+  <p>King of outplays</p>
+  <h1>Ragequits</h1>
+  <h1>Sweat</h1>
+  <h1>And Tears</h1>
+  <p><a href="https://github.com/colorlessenergy">see my work</a></p>
+</section>
+<section>
+  <h1>The</h1>
+  <h1>Mighty</h1>
+  <h1>Outplay King</h1>
+  <p>Meet the squad</p>
+  <img src="image/zed_0.jpg" alt="zed skin">
+</section>
+<section>
+  <div>
+    <p>The plays</p>
+    <h2>Zed</h2>
+    <h2>Plays</h2>
+    <p><a href="http://lol.gamepedia.com/Faker">best zed player</a></p>
+  </div>
+  <div>
+    <p>Life of zed</p>
+    {% for zed in site.data.zed-play %}
+      <p>{{zed.desc}}</p>
+      <p><a href="{{zed.link}}">read more about it</a></p>
+    {% endfor %}
+  </div>
+</section>
+<section>
+  <div>
+    <img src="image/zed_2.jpg" alt="zed skin">
+    <p>California</p>
+    <p>theluckorange@yahoo.com</p>
+  </div>
+  <div>
+    <p>The future is now!</p>
+    <h1>Talk to me</h1>
+  </div>
+  <div>
+    <p>follow me</p>
+    <ul>
+      <li><img src="image/github-logo.svg" alt="menu icon"></li>
+    </ul>
+  </div>
+</section>
