@@ -44,38 +44,41 @@ layout: default
     <h1>THE</h1>
     <h1>MIGHTY</h1>
     <h1 class="bdb"><span>OUT</span>PLAY KING</h1>
-    <p><span>Meet</span> the squad</p>
+    <p class="why"><a href="http://gameinfo.na.leagueoflegends.com/en/game-info/champions/zed/"><span class="start">Meet</span> the squad</a></p>
   </div>
 </section>
-<section>
-  <div>
-    <p>The plays</p>
-    <h2>Zed</h2>
-    <h2>Plays</h2>
-    <p><a href="http://lol.gamepedia.com/Faker">best zed player</a></p>
+<section class="zed-plays">
+  <div class="zed-title">
+    <p class="zed-desc">The Best</p>
+    <h2>ZED</h2>
+    <h2>PLAYS</h2>
+    <p class="zed-link why"><a href="https://www.op.gg/ranking/champions/name=zed" target="_blank"><span class="start">best</span> zed player</a></p>
   </div>
-  <div>
-    <p>Life of zed</p>
+  <div class="zed-play-cont">
+    <p class="zed-play-cont-title">Life of zed</p>
     {% for zed in site.data.zed-play %}
-      <p>{{zed.desc}}</p>
-      <p><a href="{{zed.link}}">read more about it</a></p>
+      <p class="cont">{{zed.desc}}</p>
+      <p class="link"><a href="{{zed.link}}" target="_blank"><span>Check</span> this out</a></p>
     {% endfor %}
   </div>
 </section>
-<section>
-  <div>
-    <img src="image/zed_2.jpg" alt="zed skin">
-    <p>California</p>
-    <p>theluckorange@yahoo.com</p>
+<footer>
+  <div class="contact">
+    <div>
+      <p>The Unseen Blade is the Deadliest</p>
+      <h1><span>Talk</span> to me</h1>
+    </div>
   </div>
-  <div>
-    <p>The future is now!</p>
-    <h1>Talk to me</h1>
+  <div class="loc">
+    <div>
+      <p class="location">California</p>
+      <p class="email">theluckorange@yahoo.com</p>
+    </div>
+    <div class="social">
+      <p>follow me</p>
+      <ul>
+        <li><a href="https://github.com/colorlessenergy"><img src="image/github-logo.svg" alt="menu icon"></a></li>
+      </ul>
+    </div>
   </div>
-  <div>
-    <p>follow me</p>
-    <ul>
-      <li><img src="image/github-logo.svg" alt="menu icon"></li>
-    </ul>
-  </div>
-</section>
+</footer>

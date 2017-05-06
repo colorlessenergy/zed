@@ -4,6 +4,52 @@ html, body {
   padding: 0;
 }
 
+footer {
+  background-color: #040404;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: center;
+}
+
+footer .contact {
+  align-self: flex-end;
+  margin-right: 20%;
+}
+
+footer .contact div h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 100px;
+  margin: 0;
+}
+
+footer .contact div p {
+  margin: 0;
+}
+
+ footer .contact h1 span {
+   border-bottom: 3px solid #ffff00;
+ }
+
+ footer .social ul {
+   display: flex;
+   justify-content: flex-start;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   width: 200px;
+ }
+
+ footer .loc .email {
+  color: #403e40;
+ }
+
+ footer .loc {
+   display: flex;
+   justify-content: space-around;
+ }
+
 header {
   background-image: url(image/bg-img.jpg);
   background-position: center;
@@ -76,7 +122,7 @@ header .main-content, .outplay {
   padding-bottom: 10px;
 }
 
-.outplay .outplay-descs {
+.outplay .outplay-descs, .zed-plays .zed-desc, .zed-plays .zed-play-cont-title, footer .contact div p, footer .loc div .location {
   font-weight: 700;
 }
 
@@ -117,7 +163,7 @@ header .main-content .why .start {
   border-bottom: 3px solid #ffff00;
 }
 
-header .main-content .why::after {
+header .main-content .why::after  {
   display:block;
   content: '';
   border-bottom: solid 3px #019fb6;
@@ -125,7 +171,8 @@ header .main-content .why::after {
   transition: transform 250ms ease-in-out
 }
 
-header .main-content .why:hover::after {
+
+header .main-content .why:hover::after, .meet .why:hover:after {
   border-bottom: 3px solid #ffff00;
   transform: scaleX(1);
   transform-origin:  0% 50%;
@@ -223,29 +270,144 @@ nav .nav.toggle-nav {
 
 .meet {
   background-image: url(image/zed_0.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: #fff;
   display: flex;
   height: 600px;
 }
 
 .meet div {
+  align-self: center;
   padding: 8% 5%;
 }
 
-.meet h1 {
-  font-size: 80px;
+.meet h1, .zed-plays .zed-title h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 85px;
+  line-height: 90px;
   margin: 0;
 }
 
 .meet .bdb span {
   border-bottom: 3px solid #ffff00;
+  display: inline-block;
 }
 
-.meet div p span {
+.meet div .squad span {
   border-bottom: 3px solid #403e40;
 }
 
+.meet .start {
+  border-bottom: solid 3px #403e40;
+}
+
+.meet .why {
+  display: inline-block;
+  font-weight: 700;
+}
+
+.meet .why::after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px #019fb6;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out
+}
+
+.meet .why:hover:after {
+  border-bottom: 3px solid #403e40;
+  transform: scaleX(1);
+  transform-origin:  0% 50%;
+}
+
+.meet .why a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.zed-plays {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.zed-plays .zed-title {
+  padding: 8% 5%;
+}
+
+.zed-plays .zed-title h2:last-of-type {
+  border-bottom: 3px solid #ffff00
+}
+
+.zed-plays .zed-title .zed-link a {
+  color: #403e40;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.zed-plays .zed-title .zed-link span {
+  border-bottom: 3px solid #403e40;
+}
+
+.zed-plays .zed-link::after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px #019fb6;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out
+}
+
+.zed-plays .zed-link:hover::after {
+  border-bottom: 3px solid #403e40;
+  transform: scaleX(1);
+  transform-origin:  0% 50%;
+}
+
+.zed-plays .zed-play-cont {
+  padding: 8% 5%;
+  width: 40%;
+}
+
+.zed-plays .zed-play-cont .cont {
+  font-size: 30px;
+}
+
+.zed-plays .zed-play-cont .link {
+  display: inline-block;
+  font-weight: 700;
+  margin: 0;
+}
+
+.zed-plays .zed-play-cont .link a {
+  color: #403e40;
+  text-decoration: none;
+}
+
+.zed-plays .zed-play-cont .link span {
+  border-bottom: 3px solid #403e40;
+}
+
+.zed-plays .zed-play-cont .link::after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px #019fb6;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out
+}
+
+.zed-plays .zed-play-cont .link:hover::after {
+  border-bottom: 3px solid #403e40;
+  transform: scaleX(1);
+  transform-origin:  0% 50%;
+}
+
 @media screen and (max-width:1024px) {
+  footer {
+    padding-left: 10%;
+  }
 
   header .main-content {
     justify-content: initial;
@@ -255,11 +417,20 @@ nav .nav.toggle-nav {
     font-size: 118px;
   }
 
+  footer .loc {
+    flex-direction: column;
+  }
+
+  .meet h1 {
+    font-size: 62px;
+    line-height: 62px;
+  }
+
   .info {
   height: auto;
 }
 
-.info .text {
+  .info .text {
   font-size: 30px;
 }
 
@@ -283,6 +454,13 @@ nav .nav.toggle-nav {
   display: none;
 }
 
+.zed-plays {
+  flex-direction: column;
+}
+
+.zed-plays .zed-play-cont {
+  width: auto;
+}
 
 }
 
