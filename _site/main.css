@@ -408,11 +408,6 @@ nav .nav.toggle-nav {
   footer {
     padding-left: 10%;
   }
-
-  header .main-content {
-    justify-content: initial;
-  }
-
   header .main-content h1 {
     font-size: 118px;
   }
