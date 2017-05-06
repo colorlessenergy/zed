@@ -6,6 +6,9 @@ html, body {
 
 header {
   background-image: url(image/bg-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: #fff;
   height: 100vh;
 }
@@ -29,14 +32,56 @@ header nav p {
   letter-spacing: 5px;
 }
 
-header .main-content {
+header .main-content, .outplay {
   display: flex;
   height: 100%;
   justify-content: center;
 }
 
+.outplay {
+  align-items: center;
+  background-color: #ccc8c8;
+  justify-content: flex-end;
+  height: 650px;
+}
+
+.outplay div {
+  margin-right: 2%;
+}
+
+.outplay div h1 {
+  font-size: 100px;
+  margin: 0;
+}
+
+.outplay img {
+  align-self: flex-start;
+  height: 50px;
+  margin: 140px 0;
+  width: 50px;
+}
+
+.outplay .link a {
+  color: #000;
+  text-decoration: none;
+}
+
+.outplay .link a:hover {
+  border-bottom: 3px solid #000;
+}
+
+.outplay .outplay-title {
+  line-height: 90px;
+}
+
+.outplay .outplay-descs {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
 header .main-content h1 {
   font-size: 150px;
+
 }
 
 header .main-content h1:last-of-type {
@@ -49,7 +94,7 @@ header .main-content h1 span {
   padding-bottom: 20px;
 }
 
-header .main-content p, header .main-content h1 {
+header .main-content p, header .main-content h1, .outplay .link {
   font-weight: 700;
   margin: 0;
 }
@@ -136,7 +181,7 @@ nav .nav.toggle-nav {
 
 .info {
   background-color: #6489ea;
-  height: 99vh;
+  height: 650px;
 }
 
 .info p {
@@ -146,14 +191,17 @@ nav .nav.toggle-nav {
 .info .info-contain {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 310px;
   padding: 8% 14%;
+}
+
+.info .info-contain div {
+  margin: 10px 0;
 }
 
 .info .text {
   font-family: 'Kaushan Script', cursive;
   font-size: 40px;
+  font-style: italic;
 }
 
 .info .text-hold {
@@ -162,4 +210,65 @@ nav .nav.toggle-nav {
 
 .info .title {
   font-weight: 700;
+}
+
+.meet {
+  background-image: url(image/zed_0.jpg);
+  color: #fff;
+  display: flex;
+  height: 600px;
+}
+
+.meet div {
+  padding: 8% 5%;
+}
+
+.meet h1 {
+  font-size: 80px;
+  margin: 0;
+}
+
+.meet .bdb span {
+  border-bottom: 3px solid #ffff00;
+}
+
+@media screen and (max-width:1024px) {
+
+  header .main-content {
+    justify-content: initial;
+  }
+
+  header .main-content h1 {
+    font-size: 118px;
+  }
+
+  .info {
+  height: auto;
+}
+
+.info .text {
+  font-size: 30px;
+}
+
+.header .main-content h1 span  {
+  padding-bottom: 1px;
+}
+
+.outplay {
+  background-image: url(image/zed_1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: flex-start;
+}
+
+.outplay div  h1, .outplay h1.outplay-title {
+  font-size: 50px;
+  line-height: 47px;
+}
+
+.outplay .outplay-descs {
+  margin-bottom: 20px;
+}
+
 }
