@@ -410,6 +410,10 @@ nav .nav.toggle-nav {
     padding-left: 10%;
   }
 
+  footer .contact div h1:last-of-type {
+    line-height: 122px;
+  }
+
   header .main-content h1 {
     font-size: 118px;
   }
