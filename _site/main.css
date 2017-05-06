@@ -40,7 +40,7 @@ header .main-content, .outplay {
 
 .outplay {
   align-items: center;
-  background-color: #ccc8c8;
+  background-color: #edeeeb;
   justify-content: flex-end;
   height: 650px;
 }
@@ -49,16 +49,9 @@ header .main-content, .outplay {
   margin-right: 2%;
 }
 
-.outplay div h1 {
-  font-size: 100px;
-  margin: 0;
-}
-
 .outplay img {
-  align-self: flex-start;
-  height: 50px;
-  margin: 140px 0;
-  width: 50px;
+  align-self: center;
+  margin: 0 10%;
 }
 
 .outplay .link a {
@@ -71,17 +64,25 @@ header .main-content, .outplay {
 }
 
 .outplay .outplay-title {
-  line-height: 90px;
+  font-family: 'Oswald', sans-serif;
+  line-height: 108px;
+  font-size: 120px;
+  margin: 0;
+}
+
+.outplay .outplay-title span {
+  border-bottom: 3px solid #ffff00;
+  display: inline-block;
+  padding-bottom: 10px;
 }
 
 .outplay .outplay-descs {
-  font-weight: 600;
-  margin-bottom: 0;
+  font-weight: 700;
 }
 
 header .main-content h1 {
+  font-family: 'Oswald', sans-serif;
   font-size: 150px;
-
 }
 
 header .main-content h1:last-of-type {
@@ -89,7 +90,7 @@ header .main-content h1:last-of-type {
 }
 
 header .main-content h1 span {
-  border-bottom: 3px solid gray;
+  border-bottom: 3px solid #403e40;
   display: inline-block;
   padding-bottom: 20px;
 }
@@ -98,6 +99,14 @@ header .main-content p, header .main-content h1, .outplay .link {
   font-weight: 700;
   margin: 0;
 }
+
+/*put style here to overule above style on it*/
+
+
+.outplay .link {
+  margin: 10px 0;
+}
+
 
 header .main-content .why {
   margin-top: 50px;
@@ -232,6 +241,10 @@ nav .nav.toggle-nav {
   border-bottom: 3px solid #ffff00;
 }
 
+.meet div p span {
+  border-bottom: 3px solid #403e40;
+}
+
 @media screen and (max-width:1024px) {
 
   header .main-content {
@@ -263,12 +276,25 @@ nav .nav.toggle-nav {
 }
 
 .outplay div  h1, .outplay h1.outplay-title {
-  font-size: 50px;
-  line-height: 47px;
+  font-size: 90px;
 }
 
-.outplay .outplay-descs {
-  margin-bottom: 20px;
+.outplay img {
+  display: none;
 }
+
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .outplay div  h1, .outplay h1.outplay-title {
+    font-size: 50px;
+    line-height: 47px;
+  }
+
+  .outplay .outplay-descs {
+    margin-bottom: 20px;
+  }
 
 }
