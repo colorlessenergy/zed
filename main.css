@@ -406,9 +406,10 @@ nav .nav.toggle-nav {
 
 @media screen and (max-width:1024px) {
   footer {
+    height: 100%;
     padding-left: 10%;
   }
-  
+
   header .main-content h1 {
     font-size: 118px;
   }
